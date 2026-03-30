@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+            <th>Imagem</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </tr>
+        <tr th:each="produto : ${produtos}">
+            <td th:text="${produto.id}"></td>
+            <td th:text="${produto.nome}"></td>
+            <td th:text="${produto.descricao}"></td>
+            <td th:text="${produto.valor}"></td>
+            <td th:text="${produto.quantidade}"></td>
+            <td><img th:src="${produto.imagem}" style="width:75px"></td>
+            <td><button href="/produto/editar">Editar</button></td>
+            <td><button href="/produto/excluir">Excluir</button></td>
+        </tr>
+    </table>
+    <a href="/produto/formulario">Novo Item</a>
+</body>
+</html>
