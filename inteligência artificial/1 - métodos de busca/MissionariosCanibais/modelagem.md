@@ -32,7 +32,7 @@ Métodos da Classe
 ## Visitados
 Cada estado visitado é armazenado no HashSet visitados
 
-## Restriçõe
+## Restrições
 ```
 mE > 0 && mE < cE //se existem missionários na esquerda, não podem ser ser menos que os canibais
 mD > 0 && mD < cD //se existem missionários na direita, não podem ser menos que os canibais
