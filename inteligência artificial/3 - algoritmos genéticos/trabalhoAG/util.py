@@ -9,6 +9,7 @@ class Util:
         rotas = ''
 
         for i in range(n):
+            # [123456789].shuffle para não gerar rotas com números iguais
             rotas += Util.cidades[random.randrange(Util.tamanho)]
         
         return rotas
